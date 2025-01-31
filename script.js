@@ -46,4 +46,8 @@ function showLocation(position) {
     L.marker([lat, lon]).addTo(map)
         .bindPopup("Your Location")
         .openPopup();
+    
+    setTimeout(() => {
+        map.invalidateSize(); // Fixes display issues inside the popup
+    }, 300);
 }
