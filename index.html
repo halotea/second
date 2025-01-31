@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimalist Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome</h1>
+        <p>Enjoy a smooth, modern design with an animated background.</p>
+        <a href="#" class="button" onclick="openPopup()">Explore</a>
+    </div>
+
+    <!-- Pop-up Modal -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <h2>Your System Information</h2>
+            <p><strong>Device:</strong> <span id="device"></span></p>
+            <p><strong>Operating System:</strong> <span id="os"></span></p>
+            <p><strong>Browser:</strong> <span id="browser"></span></p>
+            <p><strong>Location:</strong> <span id="location"></span></p>
+            
+            <!-- Map Container -->
+            <div id="map"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
